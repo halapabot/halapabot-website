@@ -1,36 +1,27 @@
-# HalapaBot website documentation expansion — 2026-08-31
+# HalapaBot website visual rebuild — 2026-08-31
 
-## Selected foundation
-The website foundation is `HalapaBot-cloudflare-waitlist.zip`, because it is the latest saved website package and contains the working `/api/waitlist` client integration plus the Cloudflare Worker/D1 schema.
+## Scope
 
-The preceding saved website packages were reviewed in order:
-- `HalapaBot-website-engines-update.zip`
-- `HalapaBot-website-feature-focused.zip`
-- `HalapaBot-website-footer-final.zip`
-- `HalapaBot-website-waitlist-contact-restored.zip`
-- `HalapaBot-cloudflare-waitlist.zip`
+This package is a fresh visual rebuild of the landing page and guide based on the agreed direction.
 
-## Product source of truth used for feature documentation
-`HalapaBot-0.9.12-rc.3.6.1-OBS-BETA-Label.zip` was inspected for the current desktop UI, renderer pages, translations and feature/runtime wording.
+### Hero
+- “Your AI co-pilot for streaming.”
+- Large H-only visual.
+- No Data-first text embedded beside the H visual.
+- Animated sparkles around the H.
+- Pointer-follow mouse glow.
+- Subtle perspective/hover motion.
 
-## Current website changes
-- Landing page expanded around the existing `Data first. AI second.` positioning.
-- Supplied 3D H / Data-first visual added to the hero.
-- Explore the Engines expanded from the previous three marketing engines into a broader product-level map covering Interaction, Personality, Voice, Automation, Memory and Moderation.
-- Features expanded into a concrete inventory of current desktop capabilities.
-- New App Tour section with real UI evidence screenshots from the project workspace.
-- New `guide.html` covering setup, connections, Overview, Voice, OBS/clipping, Memory, Moderation, Analytics, Content Workspace, Settings, Performance and troubleshooting.
-- OBS/Voice beta boundaries are explicitly stated.
-- Existing waitlist form and Cloudflare endpoint structure retained.
+### Product positioning
+- “Data first. AI second.” remains a primary standalone message.
+- “HalapaBot only analyzes the data it actually knows about.” is the supporting data-boundary statement.
 
-## Validation
-- HTML structure/content checks: PASS
-- Local asset reference checks: PASS
-- `node --check worker.js`: PASS
-- Website package remains static/Cloudflare compatible; no external runtime dependency was introduced.
+### Content
+- Product/marketing examples use generic roles rather than personal streamer/bot names.
+- Current product areas and screenshots are retained as the evidence base.
+- Voice/OBS BETA boundaries remain explicit.
 
-## Visual polish
-- Hero now uses the H-only 3D visual; the `Data first. AI second.` gradient remains explicit in the headline.
-- Added restrained card hover/in-view motion, pointer mouse glow and hero H sparkle animation.
-- Added the secondary positioning line: `HalapaBot only analyzes the data it actually knows about.`
-- Motion respects `prefers-reduced-motion` and uses no external runtime dependency.
+### Infrastructure
+- `worker.js` was retained.
+- `wrangler.toml` was retained unchanged.
+- Waitlist POST endpoint remains `/api/waitlist`.
