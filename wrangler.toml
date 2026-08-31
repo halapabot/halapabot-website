@@ -5,4 +5,4 @@ compatibility_date = "2026-08-25"
 [[d1_databases]]
 binding = "DB"
 database_name = "halapabot-waitlist"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "631bbce-2364-4045-9f88-0f2bd3d7b36f"
