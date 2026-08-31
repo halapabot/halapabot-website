@@ -28,3 +28,9 @@ The preceding saved website packages were reviewed in order:
 - Local asset reference checks: PASS
 - `node --check worker.js`: PASS
 - Website package remains static/Cloudflare compatible; no external runtime dependency was introduced.
+
+## Visual polish
+- Hero now uses the H-only 3D visual; the `Data first. AI second.` gradient remains explicit in the headline.
+- Added restrained card hover/in-view motion, pointer mouse glow and hero H sparkle animation.
+- Added the secondary positioning line: `HalapaBot only analyzes the data it actually knows about.`
+- Motion respects `prefers-reduced-motion` and uses no external runtime dependency.

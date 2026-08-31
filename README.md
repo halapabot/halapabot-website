@@ -16,3 +16,6 @@ The feature wording was derived from the current HalapaBot desktop package and t
 
 ## Deploy
 Keep the existing Cloudflare Worker/D1 configuration. The site continues to POST the waitlist form to `/api/waitlist`.
+
+## Visual polish
+The landing page uses the H-only 3D hero visual with restrained glow, card motion, pointer mouse glow and animated sparkles around the H. The `Data first. AI second.` positioning remains the primary hero message, with the supporting line `HalapaBot only analyzes the data it actually knows about.`
