@@ -14,7 +14,7 @@ This package is a fresh visual rebuild of the landing page and guide based on th
 
 ### Product positioning
 - “Data first. AI second.” remains a primary standalone message.
-- “HalapaBot only analyzes the data it actually knows about.” is the supporting data-boundary statement.
+- “HalapaBot only analyzes the data it actually knows.” is the supporting data-boundary statement.
 
 ### Content
 - Product/marketing examples use generic roles rather than personal streamer/bot names.
