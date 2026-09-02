@@ -4,7 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HalapaBot AI — Data first. AI second.</title>
-<meta name="description" content="HalapaBot is a streamer-focused control center for Twitch, OBS, voice, memory, moderation, analytics and AI-assisted workflows.">
+<meta name="description" content="HalapaBot is a streamer-focused desktop control center for Twitch, OBS, voice, memory, moderation, analytics and local or cloud AI workflows.">
+<meta name="theme-color" content="#080b18">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HalapaBot AI — Your AI co-pilot for streaming">
+<meta property="og:description" content="A desktop control center for Twitch, OBS, voice, memory, moderation, analytics and AI-assisted workflows.">
+<meta property="og:image" content="assets/screenshots/control-center-current.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HalapaBot AI — Your AI co-pilot for streaming">
+<meta name="twitter:description" content="A desktop control center built around your stream and its real context.">
+<link rel="icon" type="image/png" href="assets/brand/halapabot-icon.png">
 <link rel="icon" href="assets/brand/halapabot-icon.png">
 <style>
 :root{
@@ -173,7 +182,7 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
 @media(max-width:980px){.hero-grid{grid-template-columns:1fr}.hero{min-height:auto;padding-top:140px}.hero-visual{min-height:520px}.flow{grid-template-columns:1fr 1fr}.engine{grid-template-columns:70px 1fr}.engine .points{grid-column:2}.feature-grid{grid-template-columns:1fr 1fr}.tour-grid,.local-ai,.video-card{grid-template-columns:1fr}.tour-gallery{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){
  .wrap{width:min(var(--max),calc(100% - 26px))}.topbar{top:7px}.nav-shell{height:64px}.brand img{width:34px;height:34px}.nav{display:none}.windows-cta{padding:10px 12px;font-size:11px}
- .hero{padding:120px 0 55px}.hero-grid{gap:15px}h1{font-size:clamp(52px,15vw,76px)}.hero-copy{font-size:15px}.hero-visual{min-height:360px}.hero-logo{width:min(112vw,560px)}.hero-capabilities{grid-template-columns:1fr 1fr}.section{padding:80px 0}.manifesto-box,.local-ai{padding:31px 24px}.statement{font-size:42px}.flow,.feature-grid,.duo,.tour-gallery,.video-card{grid-template-columns:1fr}.engine{grid-template-columns:1fr}.engine .points{grid-column:auto}.engine-num{font-size:34px}.tour-grid{grid-template-columns:1fr}.waitlist{padding:48px 20px}
+ .hero{padding:120px 0 55px}.hero-grid{gap:15px}h1{font-size:clamp(48px,14vw,76px)}.hero-copy{font-size:15px}.hero-visual{min-height:360px;min-width:0;overflow:hidden}.hero-logo{width:min(100%,560px);max-width:100%;margin-inline:auto}.hero-visual:before{width:100%;height:100%}.hero-capabilities{grid-template-columns:1fr 1fr}.section{padding:80px 0}.manifesto-box,.local-ai{padding:31px 24px}.statement{font-size:42px}.flow,.feature-grid,.duo,.tour-gallery,.video-card{grid-template-columns:1fr}.engine{grid-template-columns:1fr}.engine .points{grid-column:auto}.engine-num{font-size:34px}.tour-grid{grid-template-columns:1fr}.waitlist{padding:48px 20px}
 }
 @media(prefers-reduced-motion:reduce){
  html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
@@ -188,7 +197,7 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
     <nav class="nav" aria-label="Primary">
       <a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#tour">App tour</a><a href="guide.html">Guide</a>
     </nav>
-    <a class="windows-cta" href="#waitlist" title="Windows Marketplace link will be activated at launch">Download for Windows <span>↓</span></a>
+    <a class="windows-cta" href="#waitlist" title="Join the launch waitlist">Join the waitlist <span>↓</span></a>
   </div>
 </header>
 
@@ -199,10 +208,10 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
     <div class="reveal">
       <div class="eyebrow">Built for streamers</div>
       <h1>Your <span class="gradient">AI co-pilot</span><br>for streaming.</h1>
-      <p class="hero-copy">HalapaBot is a powerful desktop control center that brings Twitch, OBS, voice, memory, moderation, analytics and AI-assisted workflows into one seamless experience.</p>
+      <p class="hero-copy">HalapaBot is a desktop control center that brings Twitch, OBS, voice, memory, moderation, analytics and local or cloud AI into one clear stream workflow.</p>
       <div class="principle"><i></i><span><strong>HalapaBot only analyzes the data it actually knows.</strong><br>It does not invent context that is not there.</span></div>
       <div class="hero-tagline">Your stream, <strong>Your Data</strong></div>
-      <div class="actions"><a class="btn primary" href="#features">Get HalapaBot <span>→</span></a><a class="btn" href="#video">Watch overview <span>▶</span></a></div>
+      <div class="actions"><a class="btn primary" href="#tour">Explore the control center <span>→</span></a><a class="btn" href="#video">Watch overview <span>▶</span></a></div>
     </div>
     <div class="hero-visual reveal">
       <div class="hero-logo">
@@ -228,7 +237,7 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
     <div class="manifesto-box reveal">
       <div class="kicker">The core idea</div>
       <p class="statement"><span class="grad">Data first.</span><br>AI second.</p>
-      <p class="substatement">The ability to use a local LLM model ensures that your data never has to leave your computer. Meaningful stream events and unforgettable moments belong to you.</p>
+      <p class="substatement">Choose Local AI / Ollama when you want processing to stay close to home, or use a configured cloud provider when that fits your workflow. Meaningful stream events and unforgettable moments belong to you.</p>
     </div>
   </div>
 </section>
@@ -239,7 +248,7 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
       <div>
         <div class="kicker">Local LLM · private by design</div>
         <h2>Your stream.<br><span class="gradient">Your context.</span></h2>
-        <p>Run AI-assisted workflows close to home with local models such as Ollama. HalapaBot keeps the control in your hands and makes the boundary clear: it can only reason over information it actually knows.</p>
+        <p>Run AI-assisted workflows with local models such as Ollama, or connect a cloud provider when you choose. HalapaBot keeps the processing path visible and makes the boundary clear: it can only reason over information it actually knows.</p>
         <a class="btn" href="#how-it-works">See how it works <span>→</span></a>
       </div>
       <div class="local-ai-points"><span>Local LLM options for local-first workflows</span><span>Automation reacts to real signals, not guesses</span><span>Missing context stays visible instead of becoming fiction</span></div>
@@ -288,12 +297,14 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
       <h2>A control center built around the stream.</h2>
     </div>
     <div class="feature-grid">
-      <article class="card feature reveal"><div class="icon">◈</div><h3>Twitch &amp; Local LLM</h3><p>Keep service connections, Ollama and stream context visible instead of hiding them behind an opaque setup.</p></article>
+      <article class="card feature reveal"><div class="icon">◈</div><h3>Connections &amp; Local AI</h3><p>Keep Twitch, AI providers, Ollama and stream context visible instead of hiding them behind an opaque setup.</p></article>
       <article class="card feature reveal"><div class="icon">◉</div><h3>Voice Control Center</h3><p>Choose microphone, language, Whisper model and execution path. OBS command groups are explicitly marked BETA.</p></article>
       <article class="card feature reveal"><div class="icon">◌</div><h3>Automatic Clipping</h3><p>Work with OBS Replay Buffer, candidate states, thresholds, cooldowns and capture confirmation.</p></article>
       <article class="card feature reveal"><div class="icon">✦</div><h3>Memory Manager</h3><p>Review and manage the context that HalapaBot is actually carrying forward.</p></article>
       <article class="card feature reveal"><div class="icon">◇</div><h3>Analytics</h3><p>Understand stream activity through the information the application has available.</p></article>
       <article class="card feature reveal"><div class="icon">↯</div><h3>Automation &amp; diagnostics</h3><p>Automate repeatable work while keeping runtime state and the reason behind each action visible.</p></article>
+      <article class="card feature reveal"><div class="icon">◌</div><h3>Runtime &amp; performance</h3><p>See CPU, RAM, GPU and VRAM state, then keep heavier local AI work inside the limits you choose.</p></article>
+      <article class="card feature reveal"><div class="icon">◇</div><h3>Alerts &amp; overlays</h3><p>Configure stream alerts and a separate performance overlay without losing the wider Control Center context.</p></article>
     </div>
   </div>
 </section>
@@ -303,11 +314,11 @@ h1{font-size:clamp(58px,7.2vw,102px);line-height:.91;letter-spacing:-.075em;marg
     <div class="section-head reveal">
       <div class="kicker">App tour</div>
       <h2>See the real application.</h2>
-      <p>No invented mockups here. The tour uses project screenshots to show the current desktop UI and the kinds of controls HalapaBot exposes.</p>
+      <p>No invented mockups here. The tour uses the current desktop UI as evidence and keeps evolving or BETA areas clearly labelled.</p>
     </div>
     <div class="tour-grid">
-      <figure class="shot reveal"><img src="assets/screenshots/overview.png" alt="HalapaBot application overview"><figcaption>Overview — the central desktop control surface.</figcaption></figure>
-      <div class="tour-copy reveal"><h3>One place to see the state.</h3><p>The application brings stream controls, runtime information and connected capabilities into one local desktop experience.</p><ul><li>Overview and runtime state</li><li>Twitch and AI connections</li><li>Diagnostics and technical details</li><li>Configurable themes and language</li></ul><a class="btn" href="guide.html">Open the complete guide →</a></div>
+      <figure class="shot reveal"><img src="assets/screenshots/control-center-current.png" alt="HalapaBot current Control Center overview"><figcaption>Current Control Center — system flow, status, resources and quick actions.</figcaption></figure>
+      <div class="tour-copy reveal"><h3>One place to see the state.</h3><p>The current Control Center brings stream controls, runtime information and connected capabilities into one desktop experience.</p><ul><li>Eight-part system flow around HalapaBot Core</li><li>Twitch, Voice Runtime, OBS and AI state</li><li>Resource overview and live activity</li><li>Quick actions for voice, OBS, diagnostics and clips</li></ul><a class="btn" href="guide.html">Open the complete guide →</a></div>
     </div>
     <div class="tour-grid" style="margin-top:22px">
       <div class="tour-copy reveal"><h3>Voice when you want it.</h3><p>Voice is configurable rather than assumed. Local Whisper options and independent command groups make the feature controllable.</p><ul><li>Local Whisper runtime</li><li>Small / Medium / Large-v3 choices</li><li>Wake word and listening state</li><li>Stream, audio, moderation, memory and assistant groups</li></ul></div>

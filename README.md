@@ -28,6 +28,13 @@ Before deploying, replace `REPLACE_WITH_YOUR_D1_DATABASE_ID` in `wrangler.toml` 
 ## Visual polish
 The landing page uses the H-only 3D hero visual with restrained glow, card motion, pointer mouse glow and animated sparkles around the H. The `Data first. AI second.` positioning remains the primary hero message, with the supporting line `HalapaBot only analyzes the data it actually knows.`
 
+## Website update — 2026-09-02
+- Refreshed the app tour with a current Control Center capture from HalapaBot Desktop `1.0.0-rc.1`.
+- Updated the tour and guide copy to reflect System Flow, runtime resources, quick actions, Local AI / Ollama and performance-aware controls.
+- Added Open Graph metadata, Twitter card metadata, theme color and favicon metadata.
+- Corrected the mobile hero visual so it stays inside the viewport instead of creating horizontal overflow.
+- Changed the top-right call to action from `Download for Windows` to `Join the waitlist` while the Marketplace download is not live.
+
 
 ## Visual rebuild — 2026-08-31
 
