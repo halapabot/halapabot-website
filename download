@@ -1,0 +1,8 @@
+worker.js
+wrangler.toml
+README.md
+SITE-VERSION-*.md
+schema/
+.git/
+.wrangler/
+.assetsignore
