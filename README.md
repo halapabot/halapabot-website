@@ -31,11 +31,16 @@ The landing page uses the H-only 3D hero visual with restrained glow, card motio
 ## Website update — 2026-09-02
 - Refreshed the app tour with a current Control Center capture from HalapaBot Desktop `1.0.0-rc.1`.
 - Added the supplied English-language UI captures for Control Center, Features, Automatic Clipping, AI Moderation, Settings, Personality, Memory and Analytics.
+- The supplied captures are also copied over the existing screenshot filenames used by the original site, keeping the image URLs stable for GitHub and Cloudflare uploads.
 - Updated the tour and guide copy to reflect System Flow, runtime resources, quick actions, Local AI / Ollama and performance-aware controls.
 - Added Open Graph metadata, Twitter card metadata, theme color and favicon metadata.
 - Corrected the mobile hero visual so it stays inside the viewport instead of creating horizontal overflow.
 - Changed the top-right call to action from `Download for Windows` to `Join the waitlist` while the Marketplace download is not live.
 - The supplied Voice capture was intentionally not used because it still shows Finnish device and language values; replace it with an English capture when available.
+
+## Deployment note
+
+Upload the complete folder contents, including `assets/screenshots/`. The text files alone are not enough: the website will show image alt text when the PNG assets are missing from the deployed `assets/screenshots/` path. The refreshed screenshots replace the existing files `overview.png`, `command-groups.png`, `settings.png`, `automatic-clipping.png`, `diagnostics.png`, `technical-details.png`, `overview-runtime.png` and `twitch-result.png`.
 
 
 ## Visual rebuild — 2026-08-31
